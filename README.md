@@ -1,9 +1,3 @@
-**Descripción corta del repositorio (GitHub “Description”):**
-
-> Magikards: duelo táctico 3D que mezcla estrategia de tablero con cartas mágicas. Defiende, empuja, congela y arrasa: ¡tus hechizos crean espectáculo… y tu equipo historias de terror si no planificas bien!
-
----
-
 # Magikards
 
 ¡Bienvenido a **Magikards**, el juego de estrategia multijugador que combina lo mejor del ajedrez táctico y los juegos de cartas de hechizos! Aquí encontrarás todo lo necesario para que empieces a contribuir en el desarrollo, entender la filosofía de diseño y descubrir cómo levantar tu propio prototipo en Unity.
