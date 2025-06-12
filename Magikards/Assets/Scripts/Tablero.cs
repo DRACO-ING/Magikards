@@ -8,9 +8,12 @@ public class Tablero : MonoBehaviour
     private GameObject[,] casillas;
     private Camera camaraActual;
     private Vector2Int casillaCursor;
+    private Vector3 bordes;
 
     [Header("Configuración del Tablero")]
     [SerializeField] private float tamanoCasillas = 1.0f;
+    [SerializeField] private float desplazamientoY = 0.2f;
+    [SerializeField] private Vector3 centroTablero = Vector3.zero;
 
     [Header("Arte del Tablero")]
     [SerializeField] private Material materialCasilla;
@@ -58,6 +61,10 @@ public class Tablero : MonoBehaviour
     }
 
     private void GenerarTodasLasCasillas(float tamanoCasillas, int cantCasillasX, int cantCasillasY){
+        desplazamientoY += transform.position.y;
+        bordes = new Vector3((cantCasillasX / 2) * tamanoCasillas + (tamanoCasillas/2), 0, (cantCasillasY / 2) * tamanoCasillas) + centroTablero;
+
+
         casillas = new GameObject[cantCasillasX, cantCasillasY];
 
         for (int x = 0; x < cantCasillasX; x++)
@@ -78,10 +85,10 @@ public class Tablero : MonoBehaviour
         objetoCasilla.AddComponent<MeshRenderer>().material = materialCasilla;
 
         Vector3[] vertices = new Vector3[4];
-        vertices[0] = new Vector3(x * tamanoCasilla, 0, y * tamanoCasilla);
-        vertices[1] = new Vector3(x * tamanoCasilla, 0, (y + 1) * tamanoCasilla);
-        vertices[2] = new Vector3((x + 1) * tamanoCasilla, 0, y * tamanoCasilla);
-        vertices[3] = new Vector3((x + 1) * tamanoCasilla, 0, (y + 1) * tamanoCasilla);
+        vertices[0] = new Vector3(x * tamanoCasilla, desplazamientoY, y * tamanoCasilla) - bordes;
+        vertices[1] = new Vector3(x * tamanoCasilla, desplazamientoY, (y + 1) * tamanoCasilla) - bordes;
+        vertices[2] = new Vector3((x + 1) * tamanoCasilla, desplazamientoY, y * tamanoCasilla) - bordes;
+        vertices[3] = new Vector3((x + 1) * tamanoCasilla, desplazamientoY, (y + 1) * tamanoCasilla) - bordes;
 
         int[] triangulos = new int[] { 0, 1, 2, 1, 3, 2 };
 
