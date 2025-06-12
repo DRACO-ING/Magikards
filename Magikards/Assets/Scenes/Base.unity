@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b5f311fa88d292348847fc2951f7cf9b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -514,52 +514,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1973285592}
   m_SourcePrefab: {fileID: 100100000, guid: b5f311fa88d292348847fc2951f7cf9b, type: 3}
---- !u!1 &1762358156
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1762358158}
-  - component: {fileID: 1762358157}
-  m_Layer: 0
-  m_Name: Prueba
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1762358157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762358156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02feb976d54ae314b9ad3c95e043cfcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tamanoCasillas: 1
-  materialCasilla: {fileID: 2100000, guid: 35a0bd458420e6a49a40c93298e4939e, type: 2}
---- !u!4 &1762358158
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762358156}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1973285591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b5f311fa88d292348847fc2951f7cf9b, type: 3}
@@ -578,6 +532,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tamanoCasillas: 2
+  desplazamientoY: 0.3
+  centroTablero: {x: 0, y: 0, z: 0}
   materialCasilla: {fileID: 2100000, guid: 35a0bd458420e6a49a40c93298e4939e, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -587,4 +543,3 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1498570461}
-  - {fileID: 1762358158}
