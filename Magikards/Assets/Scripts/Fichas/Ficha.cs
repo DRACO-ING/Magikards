@@ -14,6 +14,8 @@ public class Ficha : MonoBehaviour{
     public int actualX;
     public int actualY;
     public TipoFicha tipoFicha;
+    protected int pv;
+    protected int pa;
 
     private Vector3 posicionDeseada;
     private Vector3 escalaDeseada;
@@ -31,7 +33,7 @@ public class Ficha : MonoBehaviour{
     }
 
     // Método para obtener los movimientos posibles de la ficha
-    public List<Vector2Int> ObtenerMovimientosPosibles(ref Ficha[,] tablero, int CANT_CASILLAS_X, int CANT_CASILLAS_Y)
+    public virtual List<Vector2Int> ObtenerMovimientosPosibles(ref Ficha[,] tablero, int CANT_CASILLAS_X, int CANT_CASILLAS_Y)
     {
         // Este método debe ser implementado por las subclases
         List<Vector2Int> movimientosPosibles = new List<Vector2Int>();
