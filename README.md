@@ -37,7 +37,7 @@ La partida gira en torno a partidas de **15–25 minutos** llenas de decisiones 
   * **Rayo**: Multiimpacto, alto alcance, penalización de aturdimiento.
   * **Roca**: Excepcional defensa y control de terreno; penaliza movilidad propia.
   * **Viento**: Empuja e intercambia fichas; riesgo de mareos y caos posicional.
-  * **Hielo**: Congelamientos y ralentizaciones; cuidado con resbalones y sobrecarga de frío.
+  * **Hielo**: Congelamientos y ralentizaciones; cuidado con resbalones y requebrajamiento.
 
 * **Sistema de Maná y Sobrecarga**
 
